@@ -1,9 +1,13 @@
 <template>
-  <div>123</div>
+  <button class="id-button">
+    <span v-if="$slots.default" @click.stop>
+      <slot></slot>
+    </span>
+  </button>
 </template>
 
 <script>
   export default {
-    name: 'i-button'
+    name: 'IdButton'
   }
 </script>

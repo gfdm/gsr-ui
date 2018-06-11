@@ -7,7 +7,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const webpackConfig = require('../configs/webpack.base')
 
 module.exports = merge(webpackConfig, {
-  mode: 'development',
   entry: './docs/index.js',
   devtool: '#cheap-module-eval-source-map',
   devServer: {

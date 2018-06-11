@@ -8,7 +8,6 @@ const webpackConfig = require('../configs/webpack.base')
 
 module.exports = [
   merge(webpackConfig, {
-    mode: 'production',
     entry: './docs/index.js',
     output: {
       filename: '[name].[chunkhash:7].js',

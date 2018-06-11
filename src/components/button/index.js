@@ -1,8 +1,7 @@
-import IButton from './src/button'
-console.log(IButton)
+import IdButton from './src/button'
 
-IButton.install = function (Vue) {
-  Vue.component(IButton.name, IButton)
+IdButton.install = function (Vue) {
+  Vue.component(IdButton.name, IdButton)
 }
 
-export default IButton
+export default IdButton
