@@ -57,7 +57,9 @@ html, body, #app {
   margin: 0;
   padding: 0;
   color: #5b5777;
-  font-size: 14px; }
+  font-size: 14px;
+  font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,SimSun,sans-serif;
+  -webkit-font-smoothing: antialiased; }
 
 a {
   color: inherit;
