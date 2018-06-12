@@ -5,6 +5,8 @@ html, body, #app {
   padding: 0;
   color: $--color-default;
   font-size: 14px;
+  font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,SimSun,sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 a {

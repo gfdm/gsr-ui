@@ -1,6 +1,6 @@
 <template>
   <header class="doc-header">
-    <div class="doc-header__logo" />
+    <router-link to="/" class="doc-header__logo" />
 
     <ul class="doc-header__nav">
       <li>

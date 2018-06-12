@@ -27,6 +27,7 @@ module.exports = merge(webpackConfig, {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
+      favicon: path.resolve(__dirname, './favicon.png'),
       template: path.resolve(__dirname, './index.html'),
       filename: './index.html'
     })

@@ -20,6 +20,7 @@ module.exports = [
         filename: '[name].[contenthash:7].css'
       }),
       new HtmlWebpackPlugin({
+        favicon: path.resolve(__dirname, './favicon.png'),
         template: path.resolve(__dirname, './index.html'),
         filename: 'index.html'
       })
