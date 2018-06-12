@@ -1,57 +1,55 @@
-@include c(id) {
-  @include b(button) {
-    position: relative;
-    padding: 15px 12px;
-    color: #fff;
-    line-height: 1;
-    background: #eee;
-    border-radius: 5px;
-    border: 0;
-    outline: none;
-    overflow: hidden;
-    box-sizing: border-box;
-    transition: all .2s ease;
-    cursor: pointer;
-    -webkit-appearance: none;
+@include b(button) {
+  position: relative;
+  padding: 15px 12px;
+  color: #fff;
+  line-height: 1;
+  background: #eee;
+  border-radius: 5px;
+  border: 0;
+  outline: none;
+  overflow: hidden;
+  box-sizing: border-box;
+  transition: all .2s ease;
+  cursor: pointer;
+  -webkit-appearance: none;
 
-    &:active {
-      opacity: .7;
+  &:active {
+    opacity: .7;
+  }
+
+  @include m(primary) {
+    background: $--color-primary;
+    box-shadow: 0 7px 0 -7px $--color-primary;
+
+    &:hover {
+      box-shadow: 0 9px 28px -9px $--color-primary;
     }
+  }
 
-    @include m(primary) {
-      background: $--color-primary;
-      box-shadow: 0 7px 0 -7px $--color-primary;
+  @include m(success) {
+    background: $--color-success;
+    box-shadow: 0 7px 0 -7px $--color-success;
 
-      &:hover {
-        box-shadow: 0 9px 28px -9px $--color-primary;
-      }
+    &:hover {
+      box-shadow: 0 9px 28px -9px $--color-success;
     }
+  }
 
-    @include m(success) {
-      background: $--color-success;
-      box-shadow: 0 7px 0 -7px $--color-success;
+  @include m(warning) {
+    background: $--color-warning;
+    box-shadow: 0 7px 0 -7px $--color-warning;
 
-      &:hover {
-        box-shadow: 0 9px 28px -9px $--color-success;
-      }
+    &:hover {
+      box-shadow: 0 9px 28px -9px $--color-warning;
     }
+  }
 
-    @include m(warning) {
-      background: $--color-warning;
-      box-shadow: 0 7px 0 -7px $--color-warning;
+  @include m(danger) {
+    background: $--color-danger;
+    box-shadow: 0 7px 0 -7px $--color-danger;
 
-      &:hover {
-        box-shadow: 0 9px 28px -9px $--color-warning;
-      }
-    }
-
-    @include m(danger) {
-      background: $--color-danger;
-      box-shadow: 0 7px 0 -7px $--color-danger;
-
-      &:hover {
-        box-shadow: 0 9px 28px -9px $--color-danger;
-      }
+    &:hover {
+      box-shadow: 0 9px 28px -9px $--color-danger;
     }
   }
 }
