@@ -1,6 +1,12 @@
 <template>
-  <button class="id-button">
-    <span v-if="$slots.default" @click.stop>
+  <button
+    class="id-button"
+    :class="[
+      'id-button--' + type || ''
+    ]"
+    @click="$emit('click')"
+  >
+    <span v-if="$slots.default">
       <slot></slot>
     </span>
   </button>
@@ -8,6 +14,13 @@
 
 <script>
   export default {
-    name: 'IdButton'
+    name: 'IdButton',
+
+    props: {
+      type: {
+        type: String,
+        default: 'primary'
+      }
+    }
   }
 </script>

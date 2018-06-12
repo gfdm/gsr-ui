@@ -3,14 +3,27 @@ html, body, #app {
   height: 100%;
   margin: 0;
   padding: 0;
+  color: $--color-default;
+  font-size: 14px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 @include c(doc) {
-  @include b(main) {
-    background: #fff;
-  
-    @include e(title) {
-      max-width: 320px;
+  @include b(container) {
+    height: 100%;
+    padding-top: 52px;
+    box-sizing: border-box;
+    display: flex;
+
+    @include when(column) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
   }
 }

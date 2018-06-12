@@ -12,7 +12,7 @@ module.exports = [
     output: {
       filename: '[name].[chunkhash:7].js',
       path: path.resolve(__dirname, '../public'),
-      publicPath: '/'
+      publicPath: './'
     },
     plugins: [
       new ProgressBarPlugin(),
@@ -27,11 +27,16 @@ module.exports = [
   }),
   merge(webpackConfig, {
     mode: 'production',
-    entry: './src/index.js',
+    entry: {
+      'element-mobile': [
+        './src/index.js',
+        './src/themes/index.scss'
+      ]
+    },
     output: {
       filename: 'idola.js',
       path: path.resolve(__dirname, '../lib'),
-      publicPath: '/',
+      publicPath: './',
       libraryTarget: 'umd',
       library: 'Idola',
       umdNamedDefine: true

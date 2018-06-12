@@ -1,0 +1,14 @@
+{
+  "Idola": [
+    {
+      "name": "安装",
+      "link": "/"
+    }
+  ],
+  "Component": [
+    {
+      "name": "Button",
+      "link": "/button"
+    }
+  ]
+}

@@ -1,3 +1,4 @@
+const path = require('path')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
@@ -54,7 +55,11 @@ module.exports = {
     ]
   },
   resolve: {
-    extensions: ['.vue', '.js']
+    extensions: ['.vue', '.js', '.scss', '.json'],
+    alias: {
+      '~': path.resolve(__dirname, '../src'),
+      '~docs': path.resolve(__dirname, '../docs')
+    }
   },
   plugins: [
     new VueLoaderPlugin()

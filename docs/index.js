@@ -3,7 +3,8 @@ import Idola from '../src'
 import App from './App'
 import router from './router'
 
-import './styles/main.scss'
+import './styles/main'
+import '../src/themes'
 
 Vue.use(Idola)
 

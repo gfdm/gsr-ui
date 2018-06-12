@@ -7,9 +7,22 @@ export default new Router({
   mode: 'hash',
   routes: [
     {
-      name: 'Home',
       path: '/',
       component: () => import('./Home')
+    },
+    {
+      path: '/docs',
+      component: () => import('./Docs'),
+      children: [
+        {
+          path: '/docs/',
+          component: () => import('./Docs/Installation')
+        },
+        {
+          path: '/docs/button',
+          component: () => import('./Docs/Button')
+        }
+      ]
     }
   ]
 })

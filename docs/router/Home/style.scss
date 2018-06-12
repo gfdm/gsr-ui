@@ -1,0 +1,22 @@
+@include c(doc) {
+  @include b(home) {
+    @include e(title) {
+      margin: 0 0 36px 0;
+      & em {
+        font-style: normal;
+        -webkit-background-clip: text;
+        background-image: linear-gradient(35deg, $--color-primary, $--color-danger);
+        animation: hue 3s infinite linear;
+      }
+    }
+  }
+}
+
+@keyframes hue {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(-360deg);
+  }
+}
