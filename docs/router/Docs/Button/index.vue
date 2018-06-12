@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <section class="id-doc-main">
     button
-  </div>
+  </section>
 </template>
 
 <script>

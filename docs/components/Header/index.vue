@@ -1,8 +1,8 @@
 <template>
-  <header class="doc-header">
-    <router-link to="/" class="doc-header__logo" />
+  <header class="id-doc-header">
+    <router-link to="/" class="id-doc-header__logo" />
 
-    <ul class="doc-header__nav">
+    <ul class="id-doc-header__nav">
       <li>
         <router-link to="/" exact>首页</router-link>
       </li>

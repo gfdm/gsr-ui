@@ -15,17 +15,15 @@ a {
   cursor: pointer;
 }
 
-@include c(doc) {
-  @include b(container) {
-    height: 100%;
-    padding-top: 52px;
-    box-sizing: border-box;
-    display: flex;
+@include b(doc-container) {
+  height: 100%;
+  padding-top: 52px;
+  box-sizing: border-box;
+  display: flex;
 
-    @include when(column) {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
+  @include when(column) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }

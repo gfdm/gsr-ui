@@ -1,6 +1,6 @@
 <template>
   <section class="id-doc-main">
-    installation
+    sidebar
   </section>
 </template>
 

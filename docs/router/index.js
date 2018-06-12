@@ -19,8 +19,16 @@ export default new Router({
           component: () => import('./Docs/Installation')
         },
         {
+          path: '/docs/icon',
+          component: () => import('./Docs/Icon')
+        },
+        {
           path: '/docs/button',
           component: () => import('./Docs/Button')
+        },
+        {
+          path: '/docs/sidebar',
+          component: () => import('./Docs/Sidebar')
         }
       ]
     }

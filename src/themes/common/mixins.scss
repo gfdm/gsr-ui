@@ -1,15 +1,10 @@
+$namespace: 'id-';
 $elementSeparator: '__';
 $modifierSeparator: '--';
 $state-prefix: 'is-';
 
-@mixin component($namespace) {
-  .#{$namespace} {
-    @content;
-  }
-}
-
 @mixin block($element) {
-  &#{-$element} {
+  .#{$namespace + $element} {
     @content;
   }
 }
@@ -30,12 +25,6 @@ $state-prefix: 'is-';
     #{&}#{$modifierSeparator + $modifier} {
       @content;
     }
-  }
-}
-
-@mixin c($namespace) {
-  @include component($namespace)  {
-    @content;
   }
 }
 

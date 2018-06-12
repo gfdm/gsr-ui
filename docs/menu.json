@@ -7,8 +7,16 @@
   ],
   "Component": [
     {
+      "name": "Icon",
+      "link": "/icon"
+    },
+    {
       "name": "Button",
       "link": "/button"
+    },
+    {
+      "name": "Sidebar",
+      "link": "/sidebar"
     }
   ]
 }
