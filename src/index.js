@@ -3,7 +3,7 @@ const req = require.context('./', true, /\/[^/]+\/index.js$/)
 req.keys().forEach(file => {
   const name = file
     .slice(2)
-    .split('/')[0]
+    .split('/')[1]
     .split('-')
     .map(part => part.charAt(0).toUpperCase() + part.slice(1))
     .join('')
