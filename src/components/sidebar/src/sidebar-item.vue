@@ -1,6 +1,19 @@
 <template>
   <li class="id-sidebar-item">
-    <slot/>
+    <router-link
+      exact
+      class="id-sidebar-item__link"
+      v-if="to"
+      :to="to"
+    >
+      <slot />
+    </router-link>
+    <span
+      class="id-sidebar-item__text"
+      v-else
+    >
+      <slot />
+    </span>
   </li>
 </template>
 
@@ -8,12 +21,8 @@
   export default {
     name: 'IdSidebarItem',
 
-    data () {
-      return {
-      }
-    },
-
     props: {
+      to: String
     }
   }
 </script>

@@ -1,5 +1,64 @@
 @include b(sidebar) {
   width: 240px;
+  height: 100%;
   overflow: auto;
   box-shadow: 0 0 15px 0 rgba(0,0,0,.04);
+
+  & ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  @include e(header) {
+  }
+
+  @include e(footer) {
+    
+  }
+}
+
+@include b(sidebar-item) {
+  @include e(link) {
+    position: relative;
+    padding: 10px 8px 10px 32px;
+    box-sizing: border-box;
+    display: block;
+    cursor: pointer;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background: $--color-primary;
+      transition: all .3s ease;
+    }
+    &:hover {
+      color: $--color-primary;
+    }
+    &.router-link-active {
+      color: $--color-primary;
+      background: #f8f8f8;
+      &::after {
+        width: 4px;
+      }
+    }
+  }
+
+  @include e(text) {
+    padding: 10px 8px 10px 32px;
+    box-sizing: border-box;
+    display: block;
+    cursor: default;
+  }
+}
+
+@include b(sidebar-group) {
+  margin-bottom: 16px;
+
+  @include e(title) {
+    padding: 0 8px 8px 16px;
+  }
 }

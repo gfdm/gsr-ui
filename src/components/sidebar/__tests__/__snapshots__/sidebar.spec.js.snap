@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sidebar should render well 1`] = `
+<aside class="id-sidebar">
+  <header class="id-sidebar__header"></header>
+  <ul>
+    <li class="id-sidebar-group">
+      <div class="id-sidebar-group__title">
+        Title
+      </div>
+      <ul>
+        <li class="id-sidebar-item"><span class="id-sidebar-item__text">A</span></li>
+        <li class="id-sidebar-item"><span class="id-sidebar-item__text">B</span></li>
+      </ul>
+    </li>
+    <li class="id-sidebar-item"><span class="id-sidebar-item__text">C</span></li>
+  </ul>
+  <footer class="id-sidebar__footer"></footer>
+</aside>
+`;

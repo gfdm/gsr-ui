@@ -1,19 +1,19 @@
 <template>
   <aside class="id-sidebar">
-    <ul><slot></slot></ul>
+    <header class="id-sidebar__header">
+      <slot name="header" />
+    </header>
+    <ul>
+      <slot />
+    </ul>
+    <footer class="id-sidebar__footer">
+      <slot name="footer" />
+    </footer>
   </aside>
 </template>
 
 <script>
   export default {
-    name: 'IdSidebar',
-
-    data () {
-      return {
-      }
-    },
-
-    props: {
-    }
+    name: 'IdSidebar'
   }
 </script>

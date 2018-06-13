@@ -1,11 +1,11 @@
 {
-  "Idola": [
+  "开发指南": [
     {
       "name": "安装",
       "link": "/"
     }
   ],
-  "Component": [
+  "组件": [
     {
       "name": "Icon",
       "link": "/icon"
