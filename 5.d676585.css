@@ -1,11 +1,5 @@
 /* Colors
 -------------------------- */
-.doc-menu {
-  width: 240px;
-  overflow: auto; }
-
-/* Colors
--------------------------- */
 .doc-main {
   width: calc(100% - 240px);
   height: 100%;

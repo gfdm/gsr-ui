@@ -115,3 +115,7 @@ a {
     .id-button--danger:hover {
       box-shadow: 0 9px 28px -9px #ff4757; }
 
+.id-button, .id-button--primary, .id-button--success, .id-button--warning, .id-button--danger {
+  width: 240px;
+  overflow: auto; }
+

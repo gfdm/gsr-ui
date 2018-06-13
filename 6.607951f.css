@@ -3,8 +3,14 @@
 .doc-home {
   padding: 0 24px;
   box-sizing: border-box; }
+  .doc-home__logo {
+    width: 480px;
+    height: 140px;
+    background: url(./3279623bf5c25ec58d35f9664bd5e1f7.svg) center center no-repeat;
+    background-size: cover; }
   .doc-home__title {
-    margin: 0 0 36px 0; }
+    margin: 18px 0 36px 0;
+    text-align: center; }
     .doc-home__title em {
       font-style: normal;
       font-weight: 400;
