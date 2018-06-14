@@ -21,6 +21,10 @@
     {
       "name": "Card",
       "link": "/card"
+    },
+    {
+      "name": "Input",
+      "link": "/input"
     }
   ]
 }

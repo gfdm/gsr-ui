@@ -4,4 +4,20 @@
   padding: 12px 24px;
   background: #f4f4f4;
   overflow: auto;
+
+  @include e(block) {
+    margin-bottom: 24px;
+    @include when(half) {
+      width: 50%;
+      float: left;
+    }
+    @include when(full) {
+      width: 100%;
+      float: left;
+    }
+
+    & h3 {
+      margin: 0;
+    }
+  }
 }

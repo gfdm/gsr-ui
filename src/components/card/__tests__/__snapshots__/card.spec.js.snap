@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IdCard should render well 1`] = `
+<section class="id-card">
+  <header class="id-card__header"><span>Default</span></header>
+  <section class="id-card__body">
+    Content
+  </section>
+</section>
+`;

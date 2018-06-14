@@ -12,11 +12,39 @@
     margin: 18px 0 36px 0;
     text-align: center;
     & em {
+      position: relative;
+      color: #9ab7fc;
       font-style: normal;
       font-weight: 400;
       -webkit-background-clip: text;
       background-image: linear-gradient(35deg, $--color-primary, $--color-danger);
       animation: hue 3s infinite linear;
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 1px;
+        background: #9ab7fc;
+        display: block;
+        transition: all .2s ease;
+      }
+      &::before {
+        top: 0;
+        left: 0%;
+        transform: translate(0%);
+      }
+      &::after {
+        bottom: 0;
+        left: 100%;
+        transform: translate(-100%);
+      }
+      &:hover {
+        &::before,
+        &::after {
+          width: 100%;
+        }
+      }
     }
   }
 }

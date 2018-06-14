@@ -1,15 +1,15 @@
 <template>
-  <section class="id-doc-main id-doc-card">
-    <div class="id-doc-card__item">
+  <section class="id-doc-main is-flex">
+    <div class="id-doc-main__block is-half">
       <id-card>
-        <span slot="title">Default</span>
+        <h3 slot="title">基础用法</h3>
         {{lorem}}
       </id-card>
     </div>
 
-    <div class="id-doc-card__item">
+    <div class="id-doc-main__block is-half">
       <id-card hoverable>
-        <span slot="title">Hoverable</span>
+        <h3 slot="title">可浮起卡片</h3>
         {{lorem}}
       </id-card>
     </div>
@@ -17,8 +17,6 @@
 </template>
 
 <script>
-  import './style'
-
   export default {
     data () {
       return {

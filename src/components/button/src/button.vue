@@ -19,7 +19,10 @@
     props: {
       type: {
         type: String,
-        default: 'primary'
+        default: 'primary',
+        validator (value) {
+          return ['primary', 'success', 'warning', 'danger'].indexOf(value) !== -1
+        }
       }
     }
   }

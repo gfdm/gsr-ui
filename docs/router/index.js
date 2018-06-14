@@ -1,40 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import routes from './routes'
 
 Vue.use(Router)
 
 export default new Router({
   mode: 'hash',
-  routes: [
-    {
-      path: '/',
-      component: () => import('./Home')
-    },
-    {
-      path: '/docs',
-      component: () => import('./Docs'),
-      children: [
-        {
-          path: '/docs/',
-          component: () => import('./Docs/Installation')
-        },
-        {
-          path: '/docs/icon',
-          component: () => import('./Docs/Icon')
-        },
-        {
-          path: '/docs/button',
-          component: () => import('./Docs/Button')
-        },
-        {
-          path: '/docs/sidebar',
-          component: () => import('./Docs/Sidebar')
-        },
-        {
-          path: '/docs/card',
-          component: () => import('./Docs/Card')
-        }
-      ]
-    }
-  ]
+  routes
 })

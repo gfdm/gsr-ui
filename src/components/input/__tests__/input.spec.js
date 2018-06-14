@@ -1,18 +1,16 @@
 import { mount, createLocalVue } from '@vue/test-utils'
-import IdCard from '../'
+import IdInput from '../'
 
 const localVue = createLocalVue()
-localVue.use(IdCard)
+localVue.use(IdInput)
 
-describe('IdCard', () => {
+describe('IdInput', () => {
   test('should render well', () => {
     const Wrapper = {
       name: 'wrap',
       template: `
-        <id-card>
-          <span slot="title">Default</span>
-          Content
-        </id-card>
+        <id-input type="text" placeholder="Please input">
+        </id-input>
       `
     }
 
