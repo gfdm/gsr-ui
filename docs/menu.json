@@ -17,6 +17,10 @@
     {
       "name": "Sidebar",
       "link": "/sidebar"
+    },
+    {
+      "name": "Card",
+      "link": "/card"
     }
   ]
 }

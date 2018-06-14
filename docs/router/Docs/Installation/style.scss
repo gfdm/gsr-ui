@@ -1,0 +1,9 @@
+@include b(doc-installation) {
+  & .id-card {
+    margin-bottom: 24px;
+  }
+
+  @include e(title) {
+    margin: 0;
+  }
+}

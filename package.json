@@ -22,7 +22,8 @@
   },
   "homepage": "https://github.com/gfdm/idola#readme",
   "dependencies": {
-    "feather-icons": "^4.7.3"
+    "feather-icons": "^4.7.3",
+    "modern-normalize": "^0.4.0"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.49",

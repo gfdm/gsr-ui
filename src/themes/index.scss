@@ -1,3 +1,6 @@
-@import '../components/button/src/style/button';
-@import '../components/icon/src/style/icon';
-@import '../components/sidebar/src/style/sidebar';
+@import "../../node_modules/modern-normalize/modern-normalize.css";
+
+@import "../components/button/src/style/button";
+@import "../components/icon/src/style/icon";
+@import "../components/sidebar/src/style/sidebar";
+@import "../components/card/src/style/card";

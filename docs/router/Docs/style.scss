@@ -1,5 +1,7 @@
 @include b(doc-main) {
   width: calc(100% - 240px);
   height: 100%;
+  padding: 12px 24px;
+  background: #f4f4f4;
   overflow: auto;
 }

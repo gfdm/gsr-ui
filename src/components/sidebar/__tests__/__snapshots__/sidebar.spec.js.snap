@@ -9,11 +9,17 @@ exports[`Sidebar should render well 1`] = `
         Title
       </div>
       <ul>
-        <li class="id-sidebar-item"><span class="id-sidebar-item__text">A</span></li>
-        <li class="id-sidebar-item"><span class="id-sidebar-item__text">B</span></li>
+        <li class="id-sidebar-item">
+          <!---->
+        </li>
+        <li class="id-sidebar-item">
+          <!---->
+        </li>
       </ul>
     </li>
-    <li class="id-sidebar-item"><span class="id-sidebar-item__text">C</span></li>
+    <li class="id-sidebar-item">
+      <!---->
+    </li>
   </ul>
   <footer class="id-sidebar__footer"></footer>
 </aside>

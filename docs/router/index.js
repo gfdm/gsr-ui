@@ -29,6 +29,10 @@ export default new Router({
         {
           path: '/docs/sidebar',
           component: () => import('./Docs/Sidebar')
+        },
+        {
+          path: '/docs/card',
+          component: () => import('./Docs/Card')
         }
       ]
     }
