@@ -1,0 +1,45 @@
+/* Colors
+-------------------------- */
+.id-doc-home {
+  padding: 0 24px; }
+  .id-doc-home__logo {
+    width: 480px;
+    height: 140px;
+    background: url(./3279623bf5c25ec58d35f9664bd5e1f7.svg) center center no-repeat;
+    background-size: cover; }
+  .id-doc-home__title {
+    margin: 18px 0 36px 0;
+    text-align: center; }
+    .id-doc-home__title em {
+      position: relative;
+      color: #9ab7fc;
+      font-style: normal;
+      font-weight: 400;
+      -webkit-background-clip: text;
+      background-image: linear-gradient(35deg, #1f74ff, #ff4757);
+      animation: hue 3s infinite linear; }
+      .id-doc-home__title em::before, .id-doc-home__title em::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 1px;
+        background: #9ab7fc;
+        display: block;
+        transition: all .2s ease; }
+      .id-doc-home__title em::before {
+        top: 0;
+        left: 0%;
+        transform: translate(0%); }
+      .id-doc-home__title em::after {
+        bottom: 0;
+        left: 100%;
+        transform: translate(-100%); }
+      .id-doc-home__title em:hover::before, .id-doc-home__title em:hover::after {
+        width: 100%; }
+
+@keyframes hue {
+  from {
+    filter: hue-rotate(0deg); }
+  to {
+    filter: hue-rotate(-360deg); } }
+

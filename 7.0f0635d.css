@@ -1,0 +1,19 @@
+/* Colors
+-------------------------- */
+.id-doc-main {
+  width: calc(100% - 240px);
+  height: 100%;
+  padding: 12px 24px;
+  background: #f4f4f4;
+  overflow: auto; }
+  .id-doc-main__block {
+    margin-bottom: 24px; }
+    .id-doc-main__block.is-half {
+      width: 50%;
+      float: left; }
+    .id-doc-main__block.is-full {
+      width: 100%;
+      float: left; }
+    .id-doc-main__block h3 {
+      margin: 0; }
+
