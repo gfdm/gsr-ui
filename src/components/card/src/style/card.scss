@@ -3,6 +3,13 @@
   margin: 5px;
   border-radius: 4px;
   box-shadow: 0 9px 28px -9px rgba(0, 0, 0, .1);
+  transition: all .2s ease;
+  @include when(hoverable) {
+    &:hover {
+      box-shadow: 0 18px 35px rgba(50, 50, 93, .1), 0 8px 15px rgba(0, 0, 0, .07);
+      transform: translateY(-2px);
+    }
+  }
 
   @include e(header) {
     padding: 16px;

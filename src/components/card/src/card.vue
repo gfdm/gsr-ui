@@ -1,5 +1,10 @@
 <template>
-  <section class="id-card">
+  <section
+    class="id-card"
+    :class="{
+      'is-hoverable': hoverable
+    }"
+  >
     <header class="id-card__header">
       <slot name="title" />
     </header>
@@ -13,13 +18,8 @@
   export default {
     name: 'IdCard',
 
-    data () {
-      return {
-      }
-    },
-
     props: {
-      title: String
+      hoverable: Boolean
     }
   }
 </script>
