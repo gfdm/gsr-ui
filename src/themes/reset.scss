@@ -1,0 +1,13 @@
+@import "../../node_modules/modern-normalize/modern-normalize.css";
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px
+}
+::-webkit-scrollbar-thumb {
+  background: #d2d2d2;
+  border-radius: 5px
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #aaa
+}

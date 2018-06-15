@@ -9,6 +9,15 @@
       <li>
         <router-link to="/docs">文档</router-link>
       </li>
+      <li>
+        <a
+          href="https://github.com/gfdm/idola"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <id-icon icon="github" />
+        </a>
+      </li>
     </ul>
   </header>
 </template>
