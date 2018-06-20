@@ -1,3 +1,5 @@
+import menu from '~docs/menu'
+
 export default [
   {
     path: '/',
@@ -11,26 +13,12 @@ export default [
         path: '/docs/',
         component: () => import('./Docs/Installation')
       },
-      {
-        path: '/docs/icon',
-        component: () => import('./Docs/Icon')
-      },
-      {
-        path: '/docs/button',
-        component: () => import('./Docs/Button')
-      },
-      {
-        path: '/docs/sidebar',
-        component: () => import('./Docs/Sidebar')
-      },
-      {
-        path: '/docs/card',
-        component: () => import('./Docs/Card')
-      },
-      {
-        path: '/docs/input',
-        component: () => import('./Docs/Input')
-      }
+      ...menu['组件'].map(item => {
+        return {
+          path: `/docs${item.link}`,
+          component: () => import(`./Docs/${item.name}`)
+        }
+      })
     ]
   }
 ]
